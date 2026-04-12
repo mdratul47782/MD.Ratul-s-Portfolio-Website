@@ -155,7 +155,12 @@ const about: About = {
             deliverables and on-time project completion.
           </>,
         ],
-        images: [],
+        images: [{
+            src: "/images/Screenshot 2026-04-12 154842.png",
+            alt: "HKD Office Building",
+            width: 16,
+            height: 9,
+          },],
       },
     ],
   },
@@ -319,47 +324,54 @@ const gallery: Gallery = {
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+  // 🔹 Gallery Images
+  // { src: "/images/gallery/horizontal-1.jpg", alt: "horizontal 1", orientation: "horizontal" },
+  // { src: "/images/gallery/horizontal-2.jpg", alt: "horizontal 2", orientation: "horizontal" },
+  // { src: "/images/gallery/horizontal-3.jpg", alt: "horizontal 3", orientation: "horizontal" },
+  // { src: "/images/gallery/horizontal-4.jpg", alt: "horizontal 4", orientation: "horizontal" },
+
+  // { src: "/images/gallery/vertical-1.jpg", alt: "vertical 1", orientation: "vertical" },
+  // { src: "/images/gallery/vertical-2.jpg", alt: "vertical 2", orientation: "vertical" },
+  // { src: "/images/gallery/vertical-3.jpg", alt: "vertical 3", orientation: "vertical" },
+  // { src: "/images/gallery/vertical-4.jpg", alt: "vertical 4", orientation: "vertical" },
+
+  // // 🔹 OG
+  // { src: "/images/og/home.jpg", alt: "home og image", orientation: "horizontal" },
+
+  // 🔹 Project Images
+  // { src: "/images/projects/project-01/avatar-01.jpg", alt: "avatar", orientation: "square" },
+
+  // { src: "/images/projects/project-01/cover-01.jpg", alt: "cover 1", orientation: "horizontal" },
+  // { src: "/images/projects/project-01/cover-02.jpg", alt: "cover 2", orientation: "horizontal" },
+  // { src: "/images/projects/project-01/cover-03.jpg", alt: "cover 3", orientation: "horizontal" },
+  // { src: "/images/projects/project-01/cover-04.jpg", alt: "cover 4", orientation: "horizontal" },
+
+  // { src: "/images/projects/project-01/image-01.jpg", alt: "project image 1", orientation: "horizontal" },
+  // { src: "/images/projects/project-01/image-02.jpg", alt: "project image 2", orientation: "horizontal" },
+  // { src: "/images/projects/project-01/image-03.jpg", alt: "project image 3", orientation: "horizontal" },
+
+  
+
+  { src: "/images/projects/project-01/Screenshot 2026-04-12 073936.png", alt: "screenshot 1", orientation: "horizontal" },
+  { src: "/images/projects/project-01/Screenshot 2026-04-12 074224.png", alt: "screenshot 2", orientation: "horizontal" },
+  { src: "/images/projects/project-01/Screenshot 2026-04-12 074320.png", alt: "screenshot 3", orientation: "horizontal" },
+  { src: "/images/projects/project-01/Screenshot 2026-04-12 080008.png", alt: "screenshot 4", orientation: "horizontal" },
+  { src: "/images/projects/project-01/Screenshot 2026-04-12 080046.png", alt: "screenshot 5", orientation: "horizontal" },
+  { src: "/images/projects/project-01/Screenshot 2026-04-12 080557.png", alt: "screenshot 6", orientation: "horizontal" },
+  { src: "/images/projects/project-01/Screenshot 2026-04-12 080621.png", alt: "screenshot 7", orientation: "horizontal" },
+  { src: "/images/projects/project-01/Screenshot 2026-04-12 080652.png", alt: "screenshot 8", orientation: "horizontal" },
+  { src: "/images/projects/project-01/Screenshot 2026-04-12 080714.png", alt: "screenshot 9", orientation: "horizontal" },
+  { src: "/images/projects/project-01/Screenshot 2026-04-12 080735.png", alt: "screenshot 10", orientation: "horizontal" },
+
+  // 🔹 Root Images
+  // { src: "/images/avatar.jpg", alt: "avatar", orientation: "square" },
+  // { src: "/images/projects/project-01/full-stack-development-2.jpg", alt: "full stack dev", orientation: "horizontal" },
+
+  // { src: "/images/projects/project-01/SkillsRequiredtoBecomeaBackendDeveloper.png", alt: "backend skills", orientation: "horizontal" },
+  // { src: "/images/Ratul_PF.jpg", alt: "ratul profile", orientation: "square" },
+  // { src: "/images/hkd_building_hero_16x9.webp", alt: "hero building", orientation: "horizontal" },
+  // { src: "/images/Screenshot 2026-04-12 154842.png", alt: "root screenshot", orientation: "horizontal" },
+],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
