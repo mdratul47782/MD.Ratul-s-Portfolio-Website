@@ -2,54 +2,51 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Ratul",
+  lastName: "",
+  name: `MD. Ratul`,
+  role: "ERP & Full-Stack Software Engineer",
+  avatar: "/images/Ratul_PF.jpg",
+  email: "mdratul47782@gmail.com",
+  location: "Asia/Dhaka",
+  languages: ["English", "Bengali"],
 };
 
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>Insights on full-stack development, ERP systems, and modern web engineering.</>,
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/mdratul47782?tab=repositories",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/md-ratul-05a366283",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "",
     essential: false,
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-    essential: true,
+    link: "",
+    essential: false,
   },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `mailto:mdratul47782@gmail.com`,
     essential: true,
   },
 ];
@@ -60,24 +57,26 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Turning complex systems into clean, scalable software</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">FG Warehouse MS</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/fg-warehouse-management-system",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      I'm Ratul, an ERP &amp; Full-Stack Engineer at{" "}
+      <Text as="span" size="xl" weight="strong">HKD Outdoor Innovations Ltd.</Text>,
+      building production, quality, and warehouse systems. <br /> After hours, I push the boundaries of what web apps can do.
+    </>
   ),
 };
 
@@ -85,7 +84,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} based in Dhaka, Bangladesh`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -95,59 +94,65 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://md-ratuls-portfulio.vercel.app/#Home",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        MD. Ratul is a Full-Stack Developer and ERP Engineer with a passion for building
+        scalable, high-performance applications that streamline real-world business operations. With
+        hands-on experience in manufacturing ERP systems, he specializes in Next.js, React, Node.js,
+        MongoDB, and GraphQL — bridging the gap between enterprise software needs and modern web
+        engineering.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "HKD Outdoor Innovations Limited",
+        timeframe: "Nov 2025 - Present",
+        role: "Executive – ERP Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Designed and developed ERP software modules for Quality, Production, Maintenance, HR,
+            and FG Warehouse operations running live on the factory floor.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Built and customized system workflows to streamline business processes, integrating ERP
+            functionalities across multiple departments for accurate data flow and process coordination.
+          </>,
+          <>
+            Supported automation and reporting features — including real-time dashboards, barcode
+            printing pipelines, and role-based access control — to enhance decision-making and
+            day-to-day productivity.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/hkd_building_hero_16x9.webp",
+            alt: "HKD Office Building",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Battery Low Interactive Ltd.",
+        timeframe: "July 2024 - Oct 2024",
+        role: "Web Developer ",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed and maintained responsive websites using React, JavaScript, and CSS to improve
+            user experience and web performance.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Led a project group, conducting code reviews and debugging to ensure high-quality
+            deliverables and on-time project completion.
           </>,
         ],
         images: [],
@@ -155,99 +160,157 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Green University of Bangladesh",
+        description: (
+          <>
+            Bachelor of Science in Computer Science and Engineering (2020 – 2024), Dhaka.
+          </>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "IEEE QPAIN 2025 – Published Research",
+        description: (
+          <>
+            Presented <em>Advancing Plant Disease Detection with Deep Learning</em> — a custom
+            PlantNet model achieving 94.08% accuracy, surpassing CNN, InceptionV3, and VGG16
+            benchmarks. Paper ID: 214.
+          </>
+        ),
+      },
+      {
+        name: "React Accelerator – Learn With Sumit",
+        description: (
+          <>
+            5-month intensive program covering React, Next.js, state management, and advanced
+            ecosystem tools. Built 15+ real-world projects including a Learning Management Platform.
+          </>
+        ),
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
+  display: true,
+  title: "Technical Skills",
+  skills: [
+    {
+      title: "Full-Stack & ERP Development",
+      description: (
+        <>
+          Building end-to-end production-grade ERP and web applications with Next.js App Router,
+          React 19, Node.js, Express.js, and TypeScript — deployed and running live in factory
+          environments, including manufacturing and ERP systems.
+        </>
+      ),
+      tags: [
+        { name: "Next.js 15", icon: "nextjs" },
+        { name: "React 19", icon: "react" },
+        { name: "Node.js", icon: "nodejs" },
+        { name: "Express.js", icon: "express" },
+        { name: "JavaScript", icon: "javascript" },
+        { name: "TypeScript", icon: "typescript" },
+        { name: "ERP Systems", icon: "settings" },
+        { name: "Manufacturing Systems", icon: "factory" },
+      ],
+      images: [
+        {
+          src: "/images/projects/project-01/full-stack-development-2.jpg",
+          alt: "ERP Dashboard",
+          width: 16,
+          height: 9,
+        },
+      ],
+    },
+    {
+      title: "Database, Backend & Real-time Systems",
+      description: (
+        <>
+          Designing scalable backends with MongoDB, PostgreSQL, Prisma, GraphQL, and Socket.IO —
+          including real-time data synchronization, barcode pipelines, API integrations, and
+          multi-warehouse inventory systems.
+        </>
+      ),
+      tags: [
+        { name: "MongoDB", icon: "mongodb" },
+        { name: "PostgreSQL", icon: "postgresql" },
+        { name: "Prisma", icon: "prisma" },
+        { name: "GraphQL", icon: "graphql" },
+        { name: "Socket.IO", icon: "socketio" },
+        { name: "API Integration", icon: "api" },
+        { name: "Axios", icon: "axios" },
+      ],
+      images: [
+        {
+          src: "/images/projects/project-01/SkillsRequiredtoBecomeaBackendDeveloper.png",
+          alt: "Backend Architecture",
+          width: 16,
+          height: 9,
+        },
+      ],
+    },
+    {
+      title: "Frontend, Styling & State Management",
+      description: (
+        <>
+          Crafting modern, responsive UIs using Tailwind CSS, TanStack Query, and optimized
+          state/data fetching patterns in Next.js applications.
+        </>
+      ),
+      tags: [
+        { name: "Tailwind CSS", icon: "tailwind" },
+        { name: "TanStack Query", icon: "reactquery" },
+      ],
+      images: [
+        {
+          src: "/images/projects/project-01/cover-03.jpg",
+          alt: "Frontend UI",
+          width: 16,
+          height: 9,
+        },
+      ],
+    },
+    {
+      title: "Authentication, Tools & Workflow",
+      description: (
+        <>
+          Implementing secure authentication and efficient development workflows using NextAuth,
+          Firebase, Git, and GitHub for version control and collaboration.
+        </>
+      ),
+      tags: [
+        { name: "NextAuth", icon: "nextauth" },
+        { name: "Firebase", icon: "firebase" },
+        { name: "Git", icon: "git" },
+        { name: "GitHub", icon: "github" },
+      ],
+      images: [
+        {
+          src: "/images/projects/project-01/images.avif",
+          alt: "Dev Tools",
+          width: 16,
+          height: 9,
+        },
+      ],
+    },
+  ],
+},
 };
 
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Writing about ERP, full-stack dev & engineering...",
+  description: `Read what ${person.name} has been building and learning recently`,
 };
 
 const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `ERP systems and full-stack web projects by ${person.name}`,
 };
 
 const gallery: Gallery = {
@@ -255,8 +318,6 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
   images: [
     {
       src: "/images/gallery/horizontal-1.jpg",

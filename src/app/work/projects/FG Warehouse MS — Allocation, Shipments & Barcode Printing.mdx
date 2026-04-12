@@ -1,0 +1,55 @@
+---
+title: "FG Warehouse MS — Allocation, Shipments & Barcode Printing"
+publishedAt: "2025-01-01"
+summary: "A finished goods warehouse management system running at HKD Outdoor Innovations Ltd., featuring visual carton allocation, a shipment scanning pipeline, and automated barcode label printing."
+images:
+  - "/images/projects/project-01/Screenshot 2026-04-12 080008.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080046.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080557.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080621.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080652.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080714.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080735.png"
+team:
+  - name: "MD. Ratul"
+    role: "ERP Software Engineer"
+    avatar: "/images/Ratul_PF.jpg"
+    linkedIn: "https://www.linkedin.com/in/md-ratul-05a366283"
+link: "https://fg-warehouse-for-hkd-main.vercel.app"
+---
+
+## Overview
+
+This is a Finished Goods (FG) Warehouse Management System built and deployed at **HKD Outdoor Innovations Limited**. It manages the full lifecycle of carton movement inside a warehouse — from initial allocation into rows, through shipment scanning, to printed barcode labels for export — replacing a fragmented, spreadsheet-driven process with a live, searchable system.
+
+The app is designed for warehouse staff who need fast, reliable tooling on the floor, as well as admin users who configure allocation policies and monitor inventory across rows and warehouses.
+
+## Key Features
+
+- **Visual Carton Allocation**: Cartons are allocated into warehouse rows using a visual placement engine that supports both continuous (sequential) and segmented (split-row) allocation strategies. The engine tracks CBM (Cubic Meter) metrics per row and generates a live placement map so warehouse staff can immediately see where any carton is located.
+
+- **Shipment Scanning & Barcode Printing Pipeline**: Staff scan carton codes on arrival, which auto-generates unique carton IDs. The system then produces print-ready barcode labels with carton range support — allowing a single print run to cover a batch of sequential cartons.
+
+- **Admin Configuration Panel**: An admin editor lets authorized users configure placement policies (row capacity, allocation mode), switch between rows and warehouse sections, and run searches across the full inventory — returning size-wise PCS counts and exact carton locations by row.
+
+- **Searchable Inventory View**: Any carton or style can be looked up instantly, with results showing current location (row, section, position), quantity by size, and shipment status — giving both floor staff and management a single source of truth.
+
+## Technologies Used
+
+- **Frontend**: Next.js (App Router), Tailwind CSS, DaisyUI, Framer Motion
+- **Backend**: Express.js, MongoDB, Mongoose
+- **Auth & Storage**: JWT-based authentication, Cloudinary
+- **Deployment**: Vercel
+
+## Challenges and Learnings
+
+The most complex part of this project was the placement engine. Warehouse rows have varying capacities, and cartons may need to be split across rows mid-allocation. Designing an algorithm that handled both continuous and segmented placement — while keeping the visual map in sync — required careful state modeling and extensive edge-case testing with real carton data.
+
+Barcode label generation also presented formatting challenges: labels needed to match the physical size requirements for export compliance, and the carton range logic (e.g., printing one label per range rather than per carton) had to be verified against actual shipment workflows on the floor.
+
+## Outcome
+
+The FG Warehouse MS is live at HKD Outdoor Innovations Ltd. and has streamlined the warehouse team's daily operations — eliminating manual spreadsheet tracking for carton placement, reducing label printing errors, and giving management real-time visibility over finished goods inventory ahead of shipments.
+
+- [GitHub Repository](https://github.com/mdratul47782/FG-Warehouse-for-HKD---Main)
+- [Live Application](https://fg-warehouse-for-hkd-main.vercel.app) *(User: Ratul / Pass: 123456)*

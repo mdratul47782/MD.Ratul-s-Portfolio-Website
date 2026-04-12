@@ -1,0 +1,55 @@
+---
+title: "Production, Quality, Maintenance & IE Management System"
+publishedAt: "2024-11-01"
+summary: "A full-stack ERP system running live at HKD Outdoor Innovations Ltd., managing production efficiency, quality defect tracking, machine maintenance, and IE process layouts across a garment manufacturing floor."
+images:
+  - "/images/projects/project-01/Screenshot 2026-04-12 073936.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 074224.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 074320.png"
+team:
+  - name: "MD. Ratul"
+    role: "ERP Software Engineer"
+    avatar: "/images/Ratul_PF.jpg"
+    linkedIn: "https://www.linkedin.com/in/md-ratul-05a366283"
+link: "https://hkdoutdoorinnovationsltd.vercel.app/"
+---
+
+## Overview
+
+This is a multi-module ERP system built for and currently running at **HKD Outdoor Innovations Limited**, a garment manufacturer operating in the Karnaphuli Export Processing Zone (KEPZ), Chattogram, Bangladesh. The system covers four critical operational domains — Production, Quality, Maintenance, and Industrial Engineering (IE) — providing real-time visibility and data-driven decision-making across the shop floor.
+
+The platform features role-based access control with building-level data isolation, kiosk-friendly session persistence for TV dashboards, and a unified backend serving all departments.
+
+## Key Modules
+
+- **Production Module**: Tracks line-wise hourly targets vs. actual achievements, computes efficiency percentages, and displays style-wise WIP (Work In Progress) through real-time shop-floor dashboards with auto-refresh for floor TVs.
+
+- **Quality Module**: Enables hourly defect entry per production line, generates RFT% (Right First Time) and DHU% (Defects Per Hundred Units) reports, and ranks the top defects per line and date — enabling data-driven quality decisions without manual reporting overhead.
+
+- **Maintenance Module**: Manages a full machine inventory with serial-number tracking, floor placement records, and live status management across four states — Running, Idle, Repairable, and Damage — giving the maintenance team instant visibility over the entire machine fleet.
+
+- **IE (Industrial Engineering) Module**: Supports process-wise machine line layout management, computing hourly targets automatically from SMV (Standard Minute Value), efficiency inputs, and manpower — with live machine status sync from the Maintenance module.
+
+## Role-Based Access Control
+
+The system implements a structured permission model with five distinct roles — Production, Quality, Maintenance, IE, and Management — each scoped to their respective module. Building-level data isolation ensures that line supervisors only see their assigned floor, while management gets a consolidated cross-building view.
+
+## Technologies Used
+
+- **Frontend**: Next.js (App Router), Tailwind CSS, DaisyUI, Recharts, Framer Motion
+- **Backend**: Express.js, MongoDB, Mongoose
+- **Auth & Storage**: JWT-based authentication, Cloudinary for media
+- **Deployment**: Vercel
+
+## Challenges and Learnings
+
+One of the core challenges was syncing live machine status from the Maintenance module into the IE layout engine without creating tight coupling between modules. This required designing a clean internal API contract and a polling strategy that kept the IE dashboard current without overloading the database.
+
+Building kiosk-friendly dashboards — sessions that stay alive on shared floor TVs and auto-refresh without manual intervention — also required careful handling of token expiration and client-side state persistence.
+
+## Outcome
+
+The system is actively used across production lines at HKD Outdoor Innovations Ltd., replacing manual paper-based tracking. It has significantly improved data accuracy for efficiency and quality reporting, reduced the time managers spend compiling shift reports, and given floor supervisors real-time feedback on their line performance.
+
+- [GitHub Repository](https://github.com/mdratul47782/Quality_Production_Management_App_V2.0)
+- [Live Application](https://hkdoutdoorinnovationsltd.vercel.app/)
