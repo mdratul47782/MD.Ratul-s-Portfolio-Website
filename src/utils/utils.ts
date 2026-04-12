@@ -1,6 +1,8 @@
+// src/utils/utils.ts
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { notFound } from "next/navigation";
 
 type Team = {
   name: string;
@@ -19,15 +21,13 @@ type Metadata = {
   tag?: string;
   team: Team[];
   link?: string;
+  slug?: string; // ← add this
 };
-
-import { notFound } from "next/navigation";
 
 function getMDXFiles(dir: string) {
   if (!fs.existsSync(dir)) {
     notFound();
   }
-
   return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
 }
 
@@ -49,6 +49,7 @@ function readMDXFile(filePath: string) {
     tag: data.tag || [],
     team: data.team || [],
     link: data.link || "",
+    slug: data.slug || "", // ← read from frontmatter
   };
 
   return { metadata, content };
@@ -58,7 +59,9 @@ function getMDXData(dir: string) {
   const mdxFiles = getMDXFiles(dir);
   return mdxFiles.map((file) => {
     const { metadata, content } = readMDXFile(path.join(dir, file));
-    const slug = path.basename(file, path.extname(file));
+
+    // Use frontmatter slug if defined, otherwise fall back to filename
+    const slug = metadata.slug || path.basename(file, path.extname(file));
 
     return {
       metadata,

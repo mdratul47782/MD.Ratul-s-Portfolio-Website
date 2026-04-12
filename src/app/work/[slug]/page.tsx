@@ -1,3 +1,4 @@
+//src\app\work\[slug]\page.tsx
 import { notFound } from "next/navigation";
 import { getPosts } from "@/utils/utils";
 import {
