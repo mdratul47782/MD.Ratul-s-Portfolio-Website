@@ -1,0 +1,150 @@
+---
+title: "Movie Explorer & Comparison App"
+slug: "tmdb-movie-explorer-app"
+publishedAt: "2025-04-13"
+summary: "A full-stack movie exploration platform built with Next.js, featuring server-side rendering, custom API routes, movie comparison, watchlist, authentication, and progressive data loading using TMDB API."
+images:
+  
+  - "/images/projects/project-01/Screenshot 2026-04-13 135908.png"
+  - "/images/projects/project-01/Screenshot 2026-04-13 135908.png"
+  - "/images/projects/project-01/Screenshot 2026-04-13 140003.png"
+  - "/images/projects/project-01/Screenshot 2026-04-13 140050.png"
+  - "/images/projects/project-01/Screenshot 2026-04-13 140159.png"
+  
+
+team:
+  - name: "MD. Ratul"
+    role: "Full-Stack Developer"
+    avatar: "/images/Ratul_PF.jpg"
+    linkedIn: "https://www.linkedin.com/in/md-ratul-05a366283"
+link: "https://your-live-site-link.vercel.app/"
+---
+
+## Overview
+
+This project is a full-stack movie exploration and comparison platform built using **Next.js** and **TMDB API**. The application allows users to browse movies, view detailed information, compare multiple movies, and manage a personalized watchlist.
+
+A key architectural decision in this project was **not calling TMDB API directly from the client side**. Instead, all API communication is handled through **custom Next.js Route Handlers**, ensuring better security and control over data flow.
+
+The app heavily uses **Server-Side Rendering (SSR)** and **Progressive Rendering** to provide a fast and smooth user experience.
+
+---
+
+## Key Features
+
+### 🎬 Movie Listing (SSR)
+- Homepage is fully server-rendered
+- Fetches movie data from TMDB API via custom backend route
+- Displays dynamic movie cards
+
+### 📄 Movie Details Page
+- Dynamic route: `/movie/[id]`
+- Shows full movie details (overview, rating, poster, etc.)
+- Server-side rendered for SEO and performance
+
+### ⚡ Progressive Rendering ("More Like This")
+- Related movies load separately after main content
+- Improves perceived performance
+- User sees main data first, then recommendations
+
+### 🔍 Search System
+- Global search input in navbar
+- Uses custom API route to fetch results from TMDB
+- Displays results in a dedicated search page
+
+### ⚖️ Compare Movies Feature
+- Add multiple movie slots dynamically
+- Search and select movies into slots
+- Compare movies side-by-side
+- Fully client-side interactive system
+
+### ❤️ Watchlist System
+- Users can save movies to "Watch Later"
+- Requires authentication
+- Data stored in MongoDB
+
+### 🔐 Authentication
+- Login & Registration system implemented
+- User data stored securely in database
+- Protected actions (like watchlist)
+
+### 🌐 Social Sharing + SEO Meta
+- Share movie links on social platforms
+- Dynamic meta tags (title, image, description)
+- Improves link preview (Open Graph)
+
+---
+
+## Backend Architecture
+
+- Custom API layer using Next.js Route Handlers
+- Acts as a proxy between frontend and TMDB API
+- Handles:
+  - Movie fetching
+  - Search queries
+  - Data transformation
+
+---
+
+## Database Design
+
+MongoDB (Atlas) with two main collections:
+
+- **User**
+  - name, email, password
+- **WatchList**
+  - userId
+  - movieId
+  - movieData
+
+---
+
+## Technologies Used
+
+- **Frontend**: Next.js (App Router), Tailwind CSS
+- **Backend**: Next.js Route Handlers (API Layer)
+- **Database**: MongoDB Atlas
+- **Authentication**: Custom Auth System (JWT / Session-based)
+- **Deployment**: Vercel
+
+---
+
+## Challenges & Learnings
+
+### 🔥 API Abstraction
+Direct API call না করে custom route handler ব্যবহার করা প্রথমে complex লাগছিল, কিন্তু পরে বুঝলাম:
+- Security increase হয়
+- API key safe থাকে
+- Control বেশি পাওয়া যায়
+
+### ⚡ Progressive Rendering
+"More Like This" section আলাদা করে load করানো:
+- UX improve করেছে
+- Performance better হয়েছে
+
+### 🧠 Dynamic UI Logic
+Compare system বানানো:
+- Dynamic slots
+- Search modal
+- State management
+
+এটা পুরো project এর সবচেয়ে challenging part ছিল।
+
+---
+
+## Outcome
+
+This project demonstrates:
+
+- Full-stack architecture with clean separation
+- Real-world API integration strategy
+- SSR + Progressive Rendering optimization
+- Advanced UI features like comparison system
+- Authentication + database integration
+
+Overall, this is a **production-level project** that reflects strong understanding of modern web application architecture.
+
+---
+
+- [GitHub Repository](https://github.com/your-repo-link)
+- [Live Application](https://your-live-site-link.vercel.app/)

@@ -156,11 +156,11 @@ const about: About = {
           </>,
         ],
         images: [{
-            src: "/images/Screenshot 2026-04-12 154842.png",
-            alt: "HKD Office Building",
-            width: 16,
-            height: 9,
-          },],
+          src: "/images/Screenshot 2026-04-12 154842.png",
+          alt: "HKD Office Building",
+          width: 16,
+          height: 9,
+        },],
       },
     ],
   },
@@ -198,110 +198,110 @@ const about: About = {
     ],
   },
   technical: {
-  display: true,
-  title: "Technical Skills",
-  skills: [
-    {
-      title: "Full-Stack & ERP Development",
-      description: (
-        <>
-          Building end-to-end production-grade ERP and web applications with Next.js App Router,
-          React 19, Node.js, Express.js, and TypeScript — deployed and running live in factory
-          environments, including manufacturing and ERP systems.
-        </>
-      ),
-      tags: [
-        { name: "Next.js 15", icon: "nextjs" },
-        { name: "React 19", icon: "react" },
-        { name: "Node.js", icon: "nodejs" },
-        { name: "Express.js", icon: "express" },
-        { name: "JavaScript", icon: "javascript" },
-        { name: "TypeScript", icon: "typescript" },
-        { name: "ERP Systems", icon: "settings" },
-        { name: "Manufacturing Systems", icon: "factory" },
-      ],
-      images: [
-        {
-          src: "/images/projects/project-01/full-stack-development-2.jpg",
-          alt: "ERP Dashboard",
-          width: 16,
-          height: 9,
-        },
-      ],
-    },
-    {
-      title: "Database, Backend & Real-time Systems",
-      description: (
-        <>
-          Designing scalable backends with MongoDB, PostgreSQL, Prisma, GraphQL, and Socket.IO —
-          including real-time data synchronization, barcode pipelines, API integrations, and
-          multi-warehouse inventory systems.
-        </>
-      ),
-      tags: [
-        { name: "MongoDB", icon: "mongodb" },
-        { name: "PostgreSQL", icon: "postgresql" },
-        { name: "Prisma", icon: "prisma" },
-        { name: "GraphQL", icon: "graphql" },
-        { name: "Socket.IO", icon: "socketio" },
-        { name: "API Integration", icon: "api" },
-        { name: "Axios", icon: "axios" },
-      ],
-      images: [
-        {
-          src: "/images/projects/project-01/SkillsRequiredtoBecomeaBackendDeveloper.png",
-          alt: "Backend Architecture",
-          width: 16,
-          height: 9,
-        },
-      ],
-    },
-    {
-      title: "Frontend, Styling & State Management",
-      description: (
-        <>
-          Crafting modern, responsive UIs using Tailwind CSS, TanStack Query, and optimized
-          state/data fetching patterns in Next.js applications.
-        </>
-      ),
-      tags: [
-        { name: "Tailwind CSS", icon: "tailwind" },
-        { name: "TanStack Query", icon: "reactquery" },
-      ],
-      images: [
-        {
-          src: "/images/projects/project-01/cover-03.jpg",
-          alt: "Frontend UI",
-          width: 16,
-          height: 9,
-        },
-      ],
-    },
-    {
-      title: "Authentication, Tools & Workflow",
-      description: (
-        <>
-          Implementing secure authentication and efficient development workflows using NextAuth,
-          Firebase, Git, and GitHub for version control and collaboration.
-        </>
-      ),
-      tags: [
-        { name: "NextAuth", icon: "nextauth" },
-        { name: "Firebase", icon: "firebase" },
-        { name: "Git", icon: "git" },
-        { name: "GitHub", icon: "github" },
-      ],
-      images: [
-        {
-          src: "/images/projects/project-01/images.avif",
-          alt: "Dev Tools",
-          width: 16,
-          height: 9,
-        },
-      ],
-    },
-  ],
-},
+    display: true,
+    title: "Technical Skills",
+    skills: [
+      {
+        title: "Full-Stack & ERP Development",
+        description: (
+          <>
+            Building end-to-end production-grade ERP and web applications with Next.js App Router,
+            React 19, Node.js, Express.js, and TypeScript — deployed and running live in factory
+            environments, including manufacturing and ERP systems.
+          </>
+        ),
+        tags: [
+          { name: "Next.js 15", icon: "nextjs" },
+          { name: "React 19", icon: "react" },
+          { name: "Node.js", icon: "nodejs" },
+          { name: "Express.js", icon: "express" },
+          { name: "JavaScript", icon: "javascript" },
+          { name: "TypeScript", icon: "typescript" },
+          { name: "ERP Systems", icon: "settings" },
+          { name: "Manufacturing Systems", icon: "factory" },
+        ],
+        images: [
+          {
+            src: "/images/projects/project-01/full-stack-development-2.jpg",
+            alt: "ERP Dashboard",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Database, Backend & Real-time Systems",
+        description: (
+          <>
+            Designing scalable backends with MongoDB, PostgreSQL, Prisma, GraphQL, and Socket.IO —
+            including real-time data synchronization, barcode pipelines, API integrations, and
+            multi-warehouse inventory systems.
+          </>
+        ),
+        tags: [
+          { name: "MongoDB", icon: "mongodb" },
+          { name: "PostgreSQL", icon: "postgresql" },
+          { name: "Prisma", icon: "prisma" },
+          { name: "GraphQL", icon: "graphql" },
+          { name: "Socket.IO", icon: "socketio" },
+          { name: "API Integration", icon: "api" },
+          { name: "Axios", icon: "axios" },
+        ],
+        images: [
+          {
+            src: "/images/projects/project-01/SkillsRequiredtoBecomeaBackendDeveloper.png",
+            alt: "Backend Architecture",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Frontend, Styling & State Management",
+        description: (
+          <>
+            Crafting modern, responsive UIs using Tailwind CSS, TanStack Query, and optimized
+            state/data fetching patterns in Next.js applications.
+          </>
+        ),
+        tags: [
+          { name: "Tailwind CSS", icon: "tailwind" },
+          { name: "TanStack Query", icon: "reactquery" },
+        ],
+        images: [
+          {
+            src: "/images/projects/project-01/cover-03.jpg",
+            alt: "Frontend UI",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Authentication, Tools & Workflow",
+        description: (
+          <>
+            Implementing secure authentication and efficient development workflows using NextAuth,
+            Firebase, Git, and GitHub for version control and collaboration.
+          </>
+        ),
+        tags: [
+          { name: "NextAuth", icon: "nextauth" },
+          { name: "Firebase", icon: "firebase" },
+          { name: "Git", icon: "git" },
+          { name: "GitHub", icon: "github" },
+        ],
+        images: [
+          {
+            src: "/images/projects/project-01/images.avif",
+            alt: "Dev Tools",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+    ],
+  },
 };
 
 const blog: Blog = {
@@ -324,61 +324,61 @@ const gallery: Gallery = {
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   images: [
-  // 🔹 Gallery Images
-  // { src: "/images/gallery/horizontal-1.jpg", alt: "horizontal 1", orientation: "horizontal" },
-  // { src: "/images/gallery/horizontal-2.jpg", alt: "horizontal 2", orientation: "horizontal" },
-  // { src: "/images/gallery/horizontal-3.jpg", alt: "horizontal 3", orientation: "horizontal" },
-  // { src: "/images/gallery/horizontal-4.jpg", alt: "horizontal 4", orientation: "horizontal" },
+    // 🔹 Gallery Images
+    // { src: "/images/gallery/horizontal-1.jpg", alt: "horizontal 1", orientation: "horizontal" },
+    // { src: "/images/gallery/horizontal-2.jpg", alt: "horizontal 2", orientation: "horizontal" },
+    // { src: "/images/gallery/horizontal-3.jpg", alt: "horizontal 3", orientation: "horizontal" },
+    // { src: "/images/gallery/horizontal-4.jpg", alt: "horizontal 4", orientation: "horizontal" },
 
-  // { src: "/images/gallery/vertical-1.jpg", alt: "vertical 1", orientation: "vertical" },
-  // { src: "/images/gallery/vertical-2.jpg", alt: "vertical 2", orientation: "vertical" },
-  // { src: "/images/gallery/vertical-3.jpg", alt: "vertical 3", orientation: "vertical" },
-  // { src: "/images/gallery/vertical-4.jpg", alt: "vertical 4", orientation: "vertical" },
+    // { src: "/images/gallery/vertical-1.jpg", alt: "vertical 1", orientation: "vertical" },
+    // { src: "/images/gallery/vertical-2.jpg", alt: "vertical 2", orientation: "vertical" },
+    // { src: "/images/gallery/vertical-3.jpg", alt: "vertical 3", orientation: "vertical" },
+    // { src: "/images/gallery/vertical-4.jpg", alt: "vertical 4", orientation: "vertical" },
 
-  // // 🔹 OG
-  // { src: "/images/og/home.jpg", alt: "home og image", orientation: "horizontal" },
+    // // 🔹 OG
+    // { src: "/images/og/home.jpg", alt: "home og image", orientation: "horizontal" },
 
-  // 🔹 Project Images
-  // { src: "/images/projects/project-01/avatar-01.jpg", alt: "avatar", orientation: "square" },
+    // 🔹 Project Images
+    // { src: "/images/projects/project-01/avatar-01.jpg", alt: "avatar", orientation: "square" },
 
-  // { src: "/images/projects/project-01/cover-01.jpg", alt: "cover 1", orientation: "horizontal" },
-  // { src: "/images/projects/project-01/cover-02.jpg", alt: "cover 2", orientation: "horizontal" },
-  // { src: "/images/projects/project-01/cover-03.jpg", alt: "cover 3", orientation: "horizontal" },
-  // { src: "/images/projects/project-01/cover-04.jpg", alt: "cover 4", orientation: "horizontal" },
+    // { src: "/images/projects/project-01/cover-01.jpg", alt: "cover 1", orientation: "horizontal" },
+    // { src: "/images/projects/project-01/cover-02.jpg", alt: "cover 2", orientation: "horizontal" },
+    // { src: "/images/projects/project-01/cover-03.jpg", alt: "cover 3", orientation: "horizontal" },
+    // { src: "/images/projects/project-01/cover-04.jpg", alt: "cover 4", orientation: "horizontal" },
 
-  // { src: "/images/projects/project-01/image-01.jpg", alt: "project image 1", orientation: "horizontal" },
-  // { src: "/images/projects/project-01/image-02.jpg", alt: "project image 2", orientation: "horizontal" },
-  // { src: "/images/projects/project-01/image-03.jpg", alt: "project image 3", orientation: "horizontal" },
+    // { src: "/images/projects/project-01/image-01.jpg", alt: "project image 1", orientation: "horizontal" },
+    // { src: "/images/projects/project-01/image-02.jpg", alt: "project image 2", orientation: "horizontal" },
+    // { src: "/images/projects/project-01/image-03.jpg", alt: "project image 3", orientation: "horizontal" },
 
-  
 
-   { src: "/images/gallery/Screenshot 2026-04-13 080240.png", alt: "horizontal 1", orientation: "horizontal" },
+
+    { src: "/images/gallery/Screenshot 2026-04-13 080240.png", alt: "horizontal 1", orientation: "horizontal" },
     { src: "/images/gallery/Screenshot 2026-04-13 080518.png", alt: "screenshot 2", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 080541.png", alt: "screenshot 3", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 080555.png", alt: "screenshot 4", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 080613.png", alt: "screenshot 5", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 080627.png", alt: "screenshot 6", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 080650.png", alt: "screenshot 7", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 080710.png", alt: "screenshot 8", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 082159.png", alt: "screenshot 9", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 082227.png", alt: "screenshot 10", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 082253.png", alt: "screenshot 11", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 082309.png", alt: "screenshot 12", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 082340.png", alt: "screenshot 13", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 082435.png", alt: "screenshot 14", orientation: "horizontal" },
-  { src: "/images/gallery/Screenshot 2026-04-13 082456.png", alt: "screenshot 15", orientation: "horizontal" }
+    { src: "/images/gallery/Screenshot 2026-04-13 080541.png", alt: "screenshot 3", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 080555.png", alt: "screenshot 4", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 080613.png", alt: "screenshot 5", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 080627.png", alt: "screenshot 6", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 080650.png", alt: "screenshot 7", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 080710.png", alt: "screenshot 8", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 082159.png", alt: "screenshot 9", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 082227.png", alt: "screenshot 10", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 082253.png", alt: "screenshot 11", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 082309.png", alt: "screenshot 12", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 082340.png", alt: "screenshot 13", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 082435.png", alt: "screenshot 14", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 082456.png", alt: "screenshot 15", orientation: "horizontal" }
 
- 
 
-  // 🔹 Root Images
-  // { src: "/images/avatar.jpg", alt: "avatar", orientation: "square" },
-  // { src: "/images/projects/project-01/full-stack-development-2.jpg", alt: "full stack dev", orientation: "horizontal" },
 
-  // { src: "/images/projects/project-01/SkillsRequiredtoBecomeaBackendDeveloper.png", alt: "backend skills", orientation: "horizontal" },
-  // { src: "/images/Ratul_PF.jpg", alt: "ratul profile", orientation: "square" },
-  // { src: "/images/hkd_building_hero_16x9.webp", alt: "hero building", orientation: "horizontal" },
-  // { src: "/images/Screenshot 2026-04-12 154842.png", alt: "root screenshot", orientation: "horizontal" },
-],
+    // 🔹 Root Images
+    // { src: "/images/avatar.jpg", alt: "avatar", orientation: "square" },
+    // { src: "/images/projects/project-01/full-stack-development-2.jpg", alt: "full stack dev", orientation: "horizontal" },
+
+    // { src: "/images/projects/project-01/SkillsRequiredtoBecomeaBackendDeveloper.png", alt: "backend skills", orientation: "horizontal" },
+    // { src: "/images/Ratul_PF.jpg", alt: "ratul profile", orientation: "square" },
+    // { src: "/images/hkd_building_hero_16x9.webp", alt: "hero building", orientation: "horizontal" },
+    // { src: "/images/Screenshot 2026-04-12 154842.png", alt: "root screenshot", orientation: "horizontal" },
+  ],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
