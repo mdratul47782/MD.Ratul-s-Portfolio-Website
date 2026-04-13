@@ -69,7 +69,7 @@ const home: Home = {
         </Text>
       </Row>
     ),
-    href: "/work/fg-warehouse-management-system",
+    href: "/work/Fg-Warehouse-MS",
   },
   subline: (
     <>
@@ -352,16 +352,23 @@ const gallery: Gallery = {
 
   
 
-  { src: "/images/projects/project-01/Screenshot 2026-04-12 073936.png", alt: "screenshot 1", orientation: "horizontal" },
-  { src: "/images/projects/project-01/Screenshot 2026-04-12 074224.png", alt: "screenshot 2", orientation: "horizontal" },
-  { src: "/images/projects/project-01/Screenshot 2026-04-12 074320.png", alt: "screenshot 3", orientation: "horizontal" },
-  { src: "/images/projects/project-01/Screenshot 2026-04-12 080008.png", alt: "screenshot 4", orientation: "horizontal" },
-  { src: "/images/projects/project-01/Screenshot 2026-04-12 080046.png", alt: "screenshot 5", orientation: "horizontal" },
-  { src: "/images/projects/project-01/Screenshot 2026-04-12 080557.png", alt: "screenshot 6", orientation: "horizontal" },
-  { src: "/images/projects/project-01/Screenshot 2026-04-12 080621.png", alt: "screenshot 7", orientation: "horizontal" },
-  { src: "/images/projects/project-01/Screenshot 2026-04-12 080652.png", alt: "screenshot 8", orientation: "horizontal" },
-  { src: "/images/projects/project-01/Screenshot 2026-04-12 080714.png", alt: "screenshot 9", orientation: "horizontal" },
-  { src: "/images/projects/project-01/Screenshot 2026-04-12 080735.png", alt: "screenshot 10", orientation: "horizontal" },
+   { src: "/images/gallery/Screenshot 2026-04-13 080240.png", alt: "horizontal 1", orientation: "horizontal" },
+    { src: "/images/gallery/Screenshot 2026-04-13 080518.png", alt: "screenshot 2", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 080541.png", alt: "screenshot 3", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 080555.png", alt: "screenshot 4", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 080613.png", alt: "screenshot 5", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 080627.png", alt: "screenshot 6", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 080650.png", alt: "screenshot 7", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 080710.png", alt: "screenshot 8", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 082159.png", alt: "screenshot 9", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 082227.png", alt: "screenshot 10", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 082253.png", alt: "screenshot 11", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 082309.png", alt: "screenshot 12", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 082340.png", alt: "screenshot 13", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 082435.png", alt: "screenshot 14", orientation: "horizontal" },
+  { src: "/images/gallery/Screenshot 2026-04-13 082456.png", alt: "screenshot 15", orientation: "horizontal" }
+
+ 
 
   // 🔹 Root Images
   // { src: "/images/avatar.jpg", alt: "avatar", orientation: "square" },

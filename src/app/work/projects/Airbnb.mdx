@@ -1,0 +1,56 @@
+---
+title: "Airbnb: A Seamless Hotel Booking Experience"
+slug: "Airbnb"
+publishedAt: "2024-04-01"
+summary: "Airbnb is a full-featured real estate booking platform built with Next.js and MongoDB. It offers a seamless experience for property listings, booking management, and secure payments."
+images:
+  - "/images/projects/project-01/Screenshot 2026-04-12 080008.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080046.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080557.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080621.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080652.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080714.png"
+  - "/images/projects/project-01/Screenshot 2026-04-12 080735.png"
+team:
+  - name: "MD. Ratul"
+    role: "ERP Software Engineer"
+    avatar: "/images/Ratul_PF.jpg"
+    linkedIn: "https://www.linkedin.com/in/md-ratul-05a366283"
+link: "https://fg-warehouse-for-hkd-main.vercel.app"
+---
+
+## Overview
+Airbnb is a full-featured real estate booking platform built with Next.js and MongoDB. It offers a seamless experience for property listings, booking management, and secure payments.
+
+
+
+## Key Features
+
+- **Server-Side Rendering**: Interactive Calendar
+
+- **Authentication**: Secure login with JWT & Google OAuth.
+
+- **Payment Processing**: Stripe integration for booking.
+
+- **Dynamic Reviews**: Only verified guests can review.
+
+- **Interactive Calendar**: Date-picker for reservations.
+## Technologies Used
+
+- **Frontend**: Next.js (App Router), Tailwind CSS, DaisyUI, Framer Motion
+- **Backend**: Express.js, MongoDB, Mongoose
+- **Auth & Storage**: JWT-based authentication, Cloudinary
+- **Deployment**: Vercel
+
+## Challenges and Learnings
+
+The most complex part of this project was the placement engine. Warehouse rows have varying capacities, and cartons may need to be split across rows mid-allocation. Designing an algorithm that handled both continuous and segmented placement — while keeping the visual map in sync — required careful state modeling and extensive edge-case testing with real carton data.
+
+Barcode label generation also presented formatting challenges: labels needed to match the physical size requirements for export compliance, and the carton range logic (e.g., printing one label per range rather than per carton) had to be verified against actual shipment workflows on the floor.
+
+## Outcome
+
+The FG Warehouse MS is live at HKD Outdoor Innovations Ltd. and has streamlined the warehouse team's daily operations — eliminating manual spreadsheet tracking for carton placement, reducing label printing errors, and giving management real-time visibility over finished goods inventory ahead of shipments.
+
+- [GitHub Repository](https://github.com/mdratul47782/Airbnb)
+- [Live Application](https://airbnb-green-sigma.vercel.app/) 
